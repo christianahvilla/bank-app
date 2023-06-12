@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "~pages/*": ["./src/pages/*"],
+      "~components/*": ["./src/components/*"],
+      "~types/*": ["./src/types/*"],
+      "~utils/*": ["./src/utils/*"],
+      "~assets/*": ["./src/assets/*"]
+    }
+  },
+  "types": ["vite/client", "vite-plugin-svgr/client", "vitest/globals"],
+  "include": [
+    "vite.config.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "tailwind.config.js"
+  ],
+  "exclude": ["node_modules", "**/__mocks__/*", "vitest/**/*"]
+}
